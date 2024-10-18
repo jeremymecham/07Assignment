@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Dog Lodging Price Calculator</h2>
+    <form>
+        <label for="partyType">Dog Size:</label>
+        <br>
+        <select name="partyType" id="partyType">
+            <option value="30.00">Small</option>
+            <option value="32.00">Large</option>
+        </select>
+        <br>
+        <label for="Additional">Number of Days:</label>
+        <br>
+        <input type="number" id="Additional">
+        <br>
+        <button type="button" name="calc" id="calc" onclick="calculateParty()">Calculate Price</button>
+        <div id = "answer">Price: 0</div>
+        <div id = "answer2">Tax: 0</div>
+        <div id = "answer3">Total: 0</div>
+    </form>
+</body>
+</html>
